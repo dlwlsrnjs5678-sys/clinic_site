@@ -136,7 +136,7 @@ export default function ExamBookingPage() {
 
     if (studentError || !student) {
       setLoading(false);
-      alert('등록되지 않은 학생입니다. 이름과 생년월일(6자리)을 다시 확인해주세요.');
+      alert('등록되지 않은 학생입니다. 이름과 전화번호 뒷 4자리를 다시 확인해주세요.');
       return;
     }
 
@@ -186,7 +186,7 @@ export default function ExamBookingPage() {
   return (
     <div className="theme-pink">
       <div className="glass-card animate-fade-in" style={{ maxWidth: '600px', margin: '0 auto' }}>
-        <h1 className="heading-primary">{config.teacherName ? `${config.teacherName}T ` : ''}클리닉 신청(시험기간)</h1>
+        <h1 className="heading-primary">{config.teacherName ? `${config.teacherName}T ` : ''}보충 클리닉 신청</h1>
         
         <form onSubmit={handleSubmit}>
           <div className="grid-cols-2">
@@ -204,13 +204,13 @@ export default function ExamBookingPage() {
             </div>
 
             <div className="form-group">
-              <label className="form-label">생년월일 (6자리)</label>
+              <label className="form-label">전화번호 뒷 4자리</label>
               <input 
                 type="text" 
                 name="birthdate"
                 className="form-input" 
-                placeholder="예: 080512"
-                maxLength={6}
+                placeholder="예: 1234"
+                maxLength={4}
                 value={formData.birthdate}
                 onChange={handleChange}
                 required 
