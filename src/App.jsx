@@ -16,7 +16,7 @@ function Navigation() {
   return (
     <nav style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '40px', flexWrap: 'wrap' }}>
       <Link to="/" style={{ color: location.pathname === '/' ? '#ea580c' : 'var(--text-muted)', textDecoration: 'none', fontWeight: 'bold', borderBottom: location.pathname==='/' ? '2px solid #ea580c' : 'none', paddingBottom: '5px' }}>정규 클리닉 신청</Link>
-      <Link to="/exam" style={{ color: location.pathname === '/exam' ? '#db2777' : 'var(--text-muted)', textDecoration: 'none', fontWeight: 'bold', borderBottom: location.pathname==='/exam' ? '2px solid #db2777' : 'none', paddingBottom: '5px' }}>시험기간 클리닉 신청</Link>
+      <Link to="/exam" style={{ color: location.pathname === '/exam' ? '#db2777' : 'var(--text-muted)', textDecoration: 'none', fontWeight: 'bold', borderBottom: location.pathname==='/exam' ? '2px solid #db2777' : 'none', paddingBottom: '5px' }}>보충 클리닉 신청</Link>
       <Link to="/lookup" style={{ color: location.pathname === '/lookup' ? '#1f2937' : 'var(--text-muted)', textDecoration: 'none', fontWeight: 'bold', borderBottom: location.pathname==='/lookup' ? '2px solid #1f2937' : 'none', paddingBottom: '5px' }}>조회/취소</Link>
       
       {showAdminLinks && (

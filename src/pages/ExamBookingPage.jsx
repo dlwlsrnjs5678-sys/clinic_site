@@ -176,7 +176,7 @@ export default function ExamBookingPage() {
       console.error(error);
       alert('신청 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
     } else {
-      alert('시험기간 클리닉 신청이 완료되었습니다!');
+      alert('보충 클리닉 신청이 완료되었습니다!');
       navigate('/lookup');
     }
   };
@@ -284,7 +284,7 @@ export default function ExamBookingPage() {
           )}
 
           <button type="submit" className="btn-primary" disabled={loading || isFull}>
-            {loading ? '신청 중...' : (isFull ? '해당 시간 마감' : '시험기간 클리닉 신청하기')}
+            {loading ? '신청 중...' : (isFull ? '해당 시간 마감' : '보충 클리닉 신청하기')}
           </button>
         </form>
       </div>
