@@ -134,7 +134,7 @@ export default function BookingPage() {
 
     if (studentError || !student) {
       setLoading(false);
-      alert('등록되지 않은 학생입니다. 이름과 전화번호 뒷 4자리를 다시 확인해주세요.');
+      alert('등록되지 않은 학생입니다. 이름과 부모님 전화번호 뒷 4자리를 다시 확인해주세요.');
       return;
     }
 
@@ -199,7 +199,7 @@ export default function BookingPage() {
           </div>
 
           <div className="form-group">
-            <label className="form-label">전화번호 뒷 4자리</label>
+            <label className="form-label">부모님 전화번호 뒷 4자리</label>
             <input 
               type="text" 
               name="birthdate"

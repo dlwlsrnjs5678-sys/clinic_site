@@ -114,7 +114,7 @@ export default function LookupPage() {
           />
         </div>
         <div style={{ flex: 1 }}>
-          <label className="form-label">비밀번호(전화번호 뒷 4자리)</label>
+          <label className="form-label">비밀번호(부모님 전화번호 뒷 4자리)</label>
           <input 
             type="password" 
             className="form-input" 
